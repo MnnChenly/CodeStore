@@ -1,0 +1,34 @@
+{
+        "bulletin_CONTENT": {
+            "doc_ID": "附件ID0",
+            "doc_NAME": "附件名称0"
+        },
+        "bulletin_ID": true,
+	"staff_NAME": {
+            "product_NAME": "产品名称",
+            "prod_FUNC_TYPE": "类型"
+        },
+        "create_DATE": 199.32,
+	"status_CD": 
+	[
+		"status_CD1",
+		"status_CD2",
+		"status_CD3"
+	],
+	"bulletin_TITLE": 110,
+        "comm_OBJ_DOC_REL": 
+        [
+        {
+            "doc_ID": "附件ID1",
+            "doc_NAME": "附件名称1"
+        },
+        {
+            "doc_ID": "附件ID2",
+            "doc_NAME": "附件名称2"
+        }, 
+        {
+            "doc_ID": "附件ID3",
+            "doc_NAME": "附件名称3"
+        }
+        ]
+}

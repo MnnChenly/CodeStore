@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<!--
+		edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE)
+	-->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<xs:schema xmlns="http://www.bean.cmp.ffcs.cn/bulletin_bo/" xmlns:comm="http://www.bean.cmp.ffcs.cn/comm/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.bean.cmp.ffcs.cn/bulletin_bo/" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.bean.cmp.ffcs.cn/comm/" schemaLocation="../base/PRODUCT_BO.xsd"/>
+	<xs:complexType name="BULLETIN_READ_TYPE">
+		<xs:annotation>
+			<xs:documentation>公共阅办类型</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="BULLETIN_READ_ID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>公告阅读ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BULLETIN_ID" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>公告ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BULLETIN_TITLE" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>公告标题</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CREATE_DATE" type="xs:decimal" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>发布时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="STAFF_NAME" type="xxsd:PRODUCT_TYPE" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>发布人</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="STATUS_CD" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>状态</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BULLETIN_CONTENT" type="comm:COMM_OBJ_DOC_REL_TYPE" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>公告内容</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="COMM_OBJ_DOC_REL" type="comm:COMM_OBJ_DOC_REL_TYPE" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>公告附件关联</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="COMM_OBJ_DOC_REL_TYPE">
+		<xs:annotation>
+			<xs:documentation>公告附件关联类型</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="DOC_ID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>附件ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DOC_NAME" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>附件名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,5 @@
+SchemaToClass是一个MacOS命令行程序的项目，负责生成SchemaToBean里面的SchemaToBean（Unix 可执行文件）。
+
+SchemaToBean目录(里面有”说明.txt”具体介绍怎么使用)是依赖与SchemaToBean（Unix 可执行文件）可以实现将.xsd的Schema文件生成对应的.h和.m的工具。
+
+SchemaToBean目录里面的Demo是展示如何使用上一步生成的.h和.m

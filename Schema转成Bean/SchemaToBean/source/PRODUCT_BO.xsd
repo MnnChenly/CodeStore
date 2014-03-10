@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<!--
+		edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE)
+	-->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<xs:schema xmlns="http://www.bean.cmp.ffcs.cn/product_bo/" xmlns:comm="http://www.bean.cmp.ffcs.cn/comm/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.bean.cmp.ffcs.cn/product_bo/" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="PRODUCT_TYPE">
+		<xs:annotation>
+			<xs:documentation>产品规格类型</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="PRODUCT_ID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>产品规格ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PRODUCT_NAME" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>产品名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PROD_FUNC_TYPE" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PRODUCT_DESC" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>产品描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EXT_PROD_ID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>外部编码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EFF_DATE" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>生效时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EXP_DATE" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>失效时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="HAS_PARAM" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否带参数</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="PRODUCT_ATTR_TYPE">
+		<xs:annotation>
+			<xs:documentation>产品规格属性类型</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="PRODUCT_ID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>产品规格ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTR_ID" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>属性规格ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTR_CD" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>属性编码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTR_NAME" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>属性名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EXT_ATTR_NBR" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>外部编码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTR_DESC" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>描述</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DEFAULT_VALUE" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>默认值</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IS_NULLABLE" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>是否非空</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTR_VALUE_TYPE" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation/>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTR_FORMAT" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation/>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTR_LENGTH" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>长度</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PROD_ATTR_VALUE" type="PROD_ATTR_VALUE_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="PROD_ATTR_VALUE_TYPE">
+		<xs:annotation>
+			<xs:documentation>产品属性值类型</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="ATTR_VALUE_ID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>属性值ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTR_VALUE_NAME" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>属性值名称</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTR_VALUE_DESC" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>属性值说明</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ATTRVALUE" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>属性值</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+</xs:schema>
